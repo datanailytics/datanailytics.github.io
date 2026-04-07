@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV · Naiara Rodríguez Solano · Datanailytics</title>
+  <meta name="description" content="Currículum Vitae de Naiara Rodríguez Solano -- Data Intelligence, IA Generativa y Automatización. +13 años de experiencia.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://datanailytics.github.io/cv.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ════ TOKENS ════ */
+    :root {
+      --petrol:       #2B4A52;
+      --petrol-dark:  #1A2E35;
+      --rose:         #C4979A;
+      --rose-dark:    #A87578;
+      --warm:         #F3EDE6;
+      --cream:        #FAFAF7;
+      --border:       rgba(43,74,82,0.12);
+      --text:         #2A3C42;
+      --text-mid:     #567279;
+      --text-light:   #8FAAAF;
+      --ff-d:         'Cormorant Garamond', serif;
+      --ff-b:         'DM Sans', sans-serif;
+      --ff-m:         'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--ff-b);
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--petrol); text-decoration: none; }
+    a:hover { color: var(--rose-dark); }
+
+    /* ════ SCREEN NAV ════ */
+    .screen-nav {
+      background: var(--petrol-dark);
+      padding: 0.9rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .screen-nav-logo {
+      font-family: var(--ff-d);
+      font-size: 1.2rem;
+      color: white;
+    }
+    .screen-nav-logo span { color: #C4979A; }
+    .screen-nav-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .nav-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.78rem; font-weight: 400; letter-spacing: 0.05em;
+      border-radius: 3px; cursor: pointer; transition: all 0.22s ease;
+      font-family: var(--ff-b);
+    }
+    .nav-btn-primary { background: var(--rose); color: white; border: none; }
+    .nav-btn-primary:hover { background: var(--rose-dark); }
+    .nav-btn-ghost { border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.6); background: none; }
+    .nav-btn-ghost:hover { border-color: var(--rose); color: var(--rose); }
+
+    /* ════ PAGE ════ */
+    .page {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ════ HEADER ════ */
+    .cv-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: start;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--petrol);
+      margin-bottom: 2rem;
+    }
+    .cv-name {
+      font-family: var(--ff-d);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--petrol-dark);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .cv-title {
+      font-family: var(--ff-d);
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--rose-dark);
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .cv-tagline {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      max-width: 480px;
+      line-height: 1.6;
+    }
+    .cv-contact-block {
+      min-width: 200px;
+      text-align: right;
+    }
+    .cv-contact-item {
+      font-size: 0.8rem;
+      color: var(--text-mid);
+      margin-bottom: 0.45rem;
+      font-family: var(--ff-m);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+    .cv-contact-item a { color: var(--petrol); }
+    .cv-contact-item a:hover { color: var(--rose-dark); }
+    .cv-dot { color: var(--rose); font-size: 0.5rem; }
+    .cv-brand-badge {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.3rem 0.9rem;
+      background: var(--petrol-dark);
+      color: #C4979A;
+      font-family: var(--ff-d);
+      font-size: 0.95rem;
+      border-radius: 3px;
+    }
+    .cv-brand-badge span { color: rgba(255,255,255,0.35); }
+
+    /* ════ SECTIONS ════ */
+    .cv-section { margin-bottom: 2.4rem; }
+    .cv-section-title {
+      font-family: var(--ff-m);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--petrol);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .cv-section-title::before {
+      content: '';
+      display: block;
+      width: 4px; height: 4px;
+      background: var(--rose);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ════ EXPERIENCE ════ */
+    .exp-item { margin-bottom: 1.8rem; padding-bottom: 1.8rem; border-bottom: 1px solid var(--border); }
+    .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .exp-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.5rem;
+      align-items: start;
+      margin-bottom: 0.4rem;
+    }
+    .exp-role {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .exp-period {
+      font-family: var(--ff-m);
+      font-size: 0.7rem;
+      color: var(--text-light);
+      white-space: nowrap;
+      padding-top: 0.2rem;
+    }
+    .exp-company {
+      font-size: 0.85rem;
+      color: var(--rose-dark);
+      margin-bottom: 0.65rem;
+      font-style: italic;
+      font-family: var(--ff-d);
+    }
+    .exp-bullets { padding-left: 0; }
+    .exp-bullets li {
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      margin-bottom: 0.3rem;
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .exp-bullets li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--rose);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.75rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.14rem 0.55rem;
+      font-size: 0.65rem;
+      font-family: var(--ff-m);
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+    .tag-p { background: rgba(43,74,82,0.08); color: var(--petrol); }
+    .tag-r { background: rgba(196,151,154,0.12); color: var(--rose-dark); }
+
+    /* ════ TWO COL ════ */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    /* ════ SKILLS ════ */
+    .skill-group { margin-bottom: 1.2rem; }
+    .skill-group-name {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--petrol);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.04em;
+    }
+    .skill-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+    .skill-name { font-size: 0.8rem; color: var(--text-mid); width: 110px; flex-shrink: 0; }
+    .skill-bar-bg {
+      flex: 1;
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .skill-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--rose), var(--petrol-dark));
+      border-radius: 2px;
+    }
+    .skill-pct { font-family: var(--ff-m); font-size: 0.62rem; color: var(--text-light); width: 2.2rem; text-align: right; }
+
+    /* ════ EDU ════ */
+    .edu-item { margin-bottom: 1.2rem; }
+    .edu-degree { font-size: 0.95rem; font-weight: 500; color: var(--text); }
+    .edu-school { font-size: 0.82rem; color: var(--text-mid); }
+    .edu-year { font-family: var(--ff-m); font-size: 0.68rem; color: var(--rose); }
+
+    /* ════ AWARDS ════ */
+    .award-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.9rem;
+    }
+    .award-icon { color: var(--rose); font-size: 1.1rem; flex-shrink: 0; line-height: 1.3; }
+    .award-name { font-size: 0.88rem; font-weight: 500; color: var(--text); }
+    .award-org { font-size: 0.78rem; color: var(--text-mid); }
+
+    /* ════ LANGUAGES ════ */
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.86rem;
+    }
+    .lang-item:last-child { border-bottom: none; }
+    .lang-name { color: var(--text); font-weight: 400; }
+    .lang-level { font-family: var(--ff-m); font-size: 0.68rem; color: var(--rose); }
+
+    /* ════ PROJECTS SUMMARY ════ */
+    .proj-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.5rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .proj-row:last-child { border-bottom: none; }
+    .proj-name { font-size: 0.9rem; font-weight: 500; color: var(--petrol); }
+    .proj-desc { font-size: 0.8rem; color: var(--text-mid); margin-top: 0.2rem; line-height: 1.45; }
+    .proj-link { font-family: var(--ff-m); font-size: 0.65rem; color: var(--rose-dark); white-space: nowrap; padding-top: 0.2rem; }
+    .proj-link:hover { color: var(--rose); }
+
+    /* ════ PRINT ════ */
+    @media print {
+      .screen-nav { display: none !important; }
+      body { background: white; }
+      .page { margin: 0; padding: 1.5cm 1.5cm; max-width: 100%; }
+      .cv-section { break-inside: avoid; }
+      .exp-item { break-inside: avoid; }
+      .cv-header { break-inside: avoid; }
+      a { color: var(--petrol) !important; }
+      .two-col { break-inside: avoid; }
+      @page {
+        size: A4;
+        margin: 1.5cm;
+      }
+    }
+
+    /* ════ RESPONSIVE ════ */
+    @media (max-width: 640px) {
+      .cv-header { grid-template-columns: 1fr; }
+      .cv-contact-block { text-align: left; }
+      .cv-contact-item { justify-content: flex-start; }
+      .cv-brand-badge { display: block; text-align: center; }
+      .two-col { grid-template-columns: 1fr; }
+      .exp-header { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen-only top bar -->
+  <nav class="screen-nav">
+    <a href="/" class="screen-nav-logo">Data<span>nailytics</span></a>
+    <div class="screen-nav-actions">
+      <a href="/" class="nav-btn nav-btn-ghost">← Portfolio</a>
+      <button class="nav-btn nav-btn-primary" onclick="window.print()">⬇ Imprimir / Guardar PDF</button>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <!-- ══ HEADER ══ -->
+    <header class="cv-header">
+      <div>
+        <div class="cv-name">Naiara Rodríguez<br>Solano</div>
+        <div class="cv-title">Data Intelligence · IA Generativa · Automatización</div>
+        <p class="cv-tagline">Especialista con +13 años de experiencia diseñando y desplegando soluciones de datos, modelos NLP, automatización de procesos y productos SaaS. Enfocada en evaluación de LLMs y AI generativa bilingüe.</p>
+      </div>
+      <div class="cv-contact-block">
+        <div class="cv-contact-item">
+          <span class="cv-dot">●</span>
+          Alicante, España
+        </div>
+        <div class="cv-contact-item">
+          <span class="cv-dot">●</span>
+          Remote-first · Open to Global
+        </div>
+        <div class="cv-contact-item">
+          <span class="cv-dot">●</span>
+          <a href="https://www.linkedin.com/in/naiara-rsolano" target="_blank">linkedin.com/in/naiara-rsolano</a>
+        </div>
+        <div class="cv-contact-item">
+          <span class="cv-dot">●</span>
+          <a href="https://datanailytics.github.io" target="_blank">datanailytics.github.io</a>
+        </div>
+        <div class="cv-contact-item">
+          <span class="cv-dot">●</span>
+          <a href="mailto:datanailytics@gmail.com">datanailytics@gmail.com</a>
+        </div>
+        <div class="cv-brand-badge">Data<span>nailytics</span></div>
+      </div>
+    </header>
+
+    <!-- ══ EXPERIENCE ══ -->
+    <section class="cv-section">
+      <div class="cv-section-title">Experiencia profesional</div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-role">AI Evaluator &amp; Data Intelligence Specialist</div>
+          <div class="exp-period">2023 -- presente</div>
+        </div>
+        <div class="exp-company">Datanailytics · Freelance / Consulting · Alicante, España</div>
+        <ul class="exp-bullets">
+          <li>Evaluación de calidad en sistemas LLM con metodología MQM: análisis de Clinical Accuracy, Pedagogical Value y Safety en modelos GPT-4, Claude y Gemini.</li>
+          <li>Desarrollo de CipherScan, SaaS multi-producto de ciberseguridad: dashboard de vulnerabilidades, curso de ethical hacking y tienda de templates pentest.</li>
+          <li>Diseño y entrega de guías educativas en español "Data Science desde Cero" (7 volúmenes, nivel 0 → Principal/Staff).</li>
+          <li>Consultoría BI para clientes en retail, smart cities y sector industrial: Power BI, DAX, ETL automatizados.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag tag-p">Python</span><span class="tag tag-p">LangChain</span><span class="tag tag-p">LLM Eval</span>
