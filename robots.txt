@@ -1,12 +1,2 @@
-# robots.txt — Datanailytics · datanailytics.github.io
-# Last updated: 2025-01-01
-
 User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://datanailytics.github.io/sitemap.xml
-
-# Block private/config paths if added in future
-Disallow: /.github/
-Disallow: /node_modules/
+Disallow: /
