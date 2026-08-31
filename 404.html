@@ -1,203 +1,23 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 · Datanailytics</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta name="referrer" content="no-referrer">
+  <title>Sitio temporalmente no disponible</title>
   <style>
-    :root {
-      --petrol-dark: #1A2E35;
-      --rose:        #C4979A;
-      --rose-light:  #D6B5B7;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--petrol-dark);
-      color: rgba(255,255,255,0.6);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-      overflow: hidden;
-    }
-
-    canvas {
-      position: fixed;
-      inset: 0;
-      width: 100%; height: 100%;
-      opacity: 0.3;
-      pointer-events: none;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      animation: fadeIn 0.9s ease forwards;
-    }
-
-    .err-code {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(6rem, 20vw, 14rem);
-      font-weight: 300;
-      line-height: 1;
-      color: transparent;
-      -webkit-text-stroke: 1px rgba(196,151,154,0.3);
-      letter-spacing: -0.04em;
-      margin-bottom: 0.1em;
-      user-select: none;
-    }
-
-    .err-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--rose);
-      margin-bottom: 1.5rem;
-    }
-
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.6rem, 4vw, 2.6rem);
-      font-weight: 300;
-      color: rgba(255,255,255,0.75);
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
-
-    p {
-      font-size: 0.95rem;
-      font-weight: 300;
-      color: rgba(255,255,255,0.35);
-      max-width: 380px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.7;
-    }
-
-    .actions {
-      display: flex;
-      gap: 0.9rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.75rem 1.8rem;
-      font-size: 0.83rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-decoration: none;
-    }
-    .btn-primary {
-      background: var(--rose);
-      color: white;
-      border: 1px solid var(--rose);
-    }
-    .btn-primary:hover {
-      background: #A87578;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(196,151,154,0.3);
-    }
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.5);
-    }
-    .btn-outline:hover {
-      border-color: var(--rose-light);
-      color: var(--rose-light);
-      transform: translateY(-2px);
-    }
-
-    .divider {
-      width: 40px; height: 1px;
-      background: rgba(196,151,154,0.3);
-      margin: 3rem auto 2rem;
-    }
-
-    .brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem;
-      color: rgba(255,255,255,0.18);
-    }
-    .brand span { color: rgba(196,151,154,0.45); }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f7f4f1;color:#24363b;font-family:system-ui,-apple-system,sans-serif}
+    main{max-width:38rem;padding:2rem;text-align:center}
+    h1{font-size:1.5rem;margin:0 0 .75rem}
+    p{line-height:1.6;margin:0}
   </style>
 </head>
 <body>
-  <canvas id="c"></canvas>
-
-  <div class="content">
-    <div class="err-code">404</div>
-    <div class="err-label">// página no encontrada</div>
-    <h1>Este dato no existe<br><em style="font-style:italic">en el dataset</em></h1>
-    <p>La página que buscas no existe o ha sido movida. Vuelve al portfolio y explora desde ahí.</p>
-    <div class="actions">
-      <a href="/" class="btn btn-primary">← Volver al portfolio</a>
-      <a href="/#projects" class="btn btn-outline">Ver proyectos</a>
-    </div>
-    <div class="divider"></div>
-    <div class="brand">Data<span>nailytics</span></div>
-  </div>
-
-  <script>
-    const canvas = document.getElementById('c');
-    const ctx = canvas.getContext('2d');
-    let nodes = [], W, H;
-
-    function resize() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-      nodes = Array.from({ length: 50 }, () => ({
-        x: Math.random() * W, y: Math.random() * H,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        r: Math.random() * 1.5 + 0.5
-      }));
-    }
-    function draw() {
-      ctx.clearRect(0, 0, W, H);
-      nodes.forEach((a, i) => {
-        nodes.slice(i + 1).forEach(b => {
-          const d = Math.hypot(a.x - b.x, a.y - b.y);
-          if (d < 140) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(196,151,154,${0.15 * (1 - d/140)})`;
-            ctx.lineWidth = 0.5;
-            ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
-            ctx.stroke();
-          }
-        });
-        ctx.beginPath();
-        ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(196,151,154,0.6)';
-        ctx.fill();
-        a.x += a.vx; a.y += a.vy;
-        if (a.x < 0 || a.x > W) a.vx *= -1;
-        if (a.y < 0 || a.y > H) a.vy *= -1;
-      });
-      requestAnimationFrame(draw);
-    }
-    resize();
-    draw();
-    window.addEventListener('resize', resize);
-  </script>
+  <main>
+    <h1>Sitio temporalmente no disponible</h1>
+    <p>El contenido se encuentra en revisión.</p>
+  </main>
 </body>
 </html>
